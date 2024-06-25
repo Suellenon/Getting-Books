@@ -1,0 +1,47 @@
+  :root{
+    --cor-primaria: #9EAC71;
+    --cor-secundaria: #EADBC8;
+    --cor-tres: #C7B7A3;
+    --BRANCO: white;
+    --preto: black;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+   .topo{
+    display: flex;
+    
+   
+
+  
+  
+  
+   }
+   
+   header{
+
+    height: 150px;
+    background-color:var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    
+    
+}
+#icon-perfil{
+    display: flex;
+    flex-direction: column;
+   
+}
+#topo-buscar{
+    
+}
