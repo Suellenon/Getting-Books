@@ -1,47 +1,181 @@
-  :root{
+  :root {
     --cor-primaria: #9EAC71;
-    --cor-secundaria: #EADBC8;
-    --cor-tres: #C7B7A3;
+    --cor-secundaria: #545b3c;
+    --cor-tres: #eadbc8;
     --BRANCO: white;
     --preto: black;
   }
-  *{
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-   
-   .topo{
-    display: flex;
-    
-   
 
-  
-  
-  
-   }
-   
-   header{
+  .topo {
+    display: flex;
+    color: var(--BRANCO);
+
+
+
+
+
+  }
+
+  header {
 
     height: 150px;
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-primaria);
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
-}
-.logo{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-    
-    
-}
-#icon-perfil{
+
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  #icon-perfil {
     display: flex;
     flex-direction: column;
    
-}
-#topo-buscar{
+  }
+
+  #icon-perfil a {
+    text-decoration: none;
+    color: var(--BRANCO);
+   
+  }
+
+  #topo-buscar {
+
+    display: flex;
+
+
+
+
+  }
+
+  #btn-buscar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+
+  }
+
+  #buscar {
+    height: 35px;
+    width: 200px;
+    border-radius: 40px;
+    border: none;
+
+    padding: 0, 5rem;
+
+  }
+
+  /* lateral da pagina */
+  .barra-lateral {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  border-right: solid var(--cor-secundaria);
+  }
+  .barra-lateral a{
+    margin-bottom: 60px;
+    text-decoration: none;
+    cursor: pointer;
+    color:var(--cor-secundaria) ;
+    font-size: 20px;
+   
+   
+  }
+  .barra-lateral :hover{
+    color: var(--cor-primaria);
     
+  }
+  .cabeça{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+main{
+
+  background-image: url(../imgs/livro3.jpg);
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
+
+  .formulario-troca{
+    display: flex;
+    flex-direction: column;
+   
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    height: 50vh;
+    margin: 40px;
+    margin-left: 20%;
+  }
+  .perguntas{
+    
+   margin-bottom: 70px;
+   font-size: 25px;
+  }
+  .perguntas label{
+    background-color: var(--cor-tres);
+    border: solid var(--cor-secundaria);
+    padding: 20px;
+  }
+  #resposta{
+    width: 30%;
+    height: 40px;
+    background-color: var(--cor-primaria);
+    padding: 20px;
+  }
+
+
+
+  .text-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    bottom: 0;
+  }
+  .text-final h3{
+    font-size: 30px;
+    color: var(--cor-secundaria);
+  }
+  .text-final p{
+    font-size: 20px;
+  }
+  .text-final input{
+    height: 30px;
+    width:300px;
+  
+    
+  }
+ #enviar{
+  color: var(--cor-secundaria);
+  background-color: var(--cor-tres);
+  border: none;
+  cursor: pointer;
+ 
+ }
+  
