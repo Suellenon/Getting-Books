@@ -31,8 +31,8 @@
             <button type="submit" id="btn-buscar"> <img src="./imgs/procurar.png" alt="" width="30px"></button>
         </form>
     </header>
-    
-    <main>
+
+    <main id="avaliacao-troca">
         <aside class="barra-lateral">
             <a href="">Home</a>
             <a href="">Minhas Trocas </a>
@@ -40,7 +40,9 @@
             <a href="">Ajuda</a>
             <a href="">Quem Somos?</a>
         </aside>
-            <div class="cabeça">
+
+        <section>
+            <div class="cabeca">
                 <h2>
                     Como você avalia sua troca?
                 </h2>
@@ -48,36 +50,53 @@
                     Responda as seguintes perguntas e ajude a nossa plataforma.
                 </p>
             </div>
-            <section class="formulario-troca">
-                <form action="">
-                    <div class="perguntas">
-                        <label for="text">Ocorreu algum problema na comunicação?</label>
-                        <input type="text" name="text" id="resposta">
-                        <label for="text">Ocorreu algum problema na comunicação?</label>
-                        <input type="text" name="text" id="resposta">
-                        <label for="text">Ocorreu algum problema na comunicação?</label>
-                        <input type="text" name="text" id="resposta">
-                    </div>
-                    <div class="perguntas">
-                        <label for="text">Ocorreu algum problema na comunicação?</label>
-                        <input type="text" name="text" id="resposta">
-                        <label for="text">Ocorreu algum problema na comunicação?</label>
-                        <input type="text" name="text" id="resposta">
-                        <label for="text">Ocorreu algum problema na comunicação?</label>
-                        <input type="text" name="text" id="resposta">
-                    </div>
-                </form>
-            </section>
-        
-        <footer class="text-final">
-            <h3>
-                Quer falar mais sobre?
-            </h3>
-            <input  type="text" name="text" id="caixa-sobre" placeholder=".....">
-            <input type="submit" value="Enviar" id="text">
-            
-            <p>O seu feedback é muito importante pra nós</p>
-        </footer>
+            <form class="formulario-troca" action="">
+                <div class="perguntas">
+                    <label for="text">Ocorreu algum problema na comunicação?</label>
+                    <input type="text" name="text" id="resposta">
+                </div>
+
+                <div class="perguntas">
+                    <label for="text">Ocorreu erro na troca?</label>
+                    <input type="text" name="text" id="resposta">
+                </div>
+
+                <div class="perguntas">
+                    <label for="text">Ocorreu algum erro na plataforma?</label>
+                    <input type="text" name="text" id="resposta">
+                </div>
+                <div class="perguntas">
+                    <label for="text">O livro está em bom estado?</label>
+                    <input type="text" name="text" id="resposta">
+                </div>
+
+
+                <div class="perguntas">
+                    <label for="text">Está satisfeito(a) com a troca?</label>
+                    <input type="text" name="text" id="resposta">
+                </div>
+                <div class="perguntas">
+                    <label for="text">Como você avalia o usuário da troca?</label>
+                    <input type="text" name="text" id="resposta">
+                </div>
+
+            </form>
+            <div class="text-final">
+
+                <h3>
+                    Quer falar mais sobre?
+                </h3>
+                <input type="text" name="text" id="caixa-sobre" placeholder=".....">
+                <input type="submit" value="Enviar" id="text">
+
+                <p>O seu feedback é muito importante pra nós</p>
+
+
+            </div>
+        </section>
+
+
+
     </main>
 </body>
 

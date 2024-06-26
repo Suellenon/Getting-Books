@@ -9,17 +9,12 @@
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+     /* box-sizing: border-box;  */
   }
 
   .topo {
     display: flex;
     color: var(--BRANCO);
-
-
-
-
-
   }
 
   header {
@@ -28,6 +23,7 @@
     background-color: var(--cor-primaria);
     display: flex;
     align-items: center;
+    padding-left: 30px;
     justify-content: space-between;
 
   }
@@ -55,6 +51,7 @@
   #topo-buscar {
 
     display: flex;
+    position: relative;
 
 
 
@@ -65,6 +62,8 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    position: absolute;
+    right: 3%;
 
 
   }
@@ -74,21 +73,23 @@
     width: 200px;
     border-radius: 40px;
     border: none;
-
-    padding: 0, 5rem;
-
+    padding: 1rem;
   }
+  #buscar ::placeholder{
+    text-align: center;
+  }
+ 
 
   /* lateral da pagina */
   .barra-lateral {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    
     padding: 30px;
-  height: 100vh;
-  width: 300px;
-  position: fixed;
-  border-right: solid var(--cor-secundaria);
+    height: 100vh;
+    width: 300px;
+    align-items: center;
+    border-right: solid var(--cor-secundaria);
   }
   .barra-lateral a{
     margin-bottom: 60px;
@@ -96,6 +97,7 @@
     cursor: pointer;
     color:var(--cor-secundaria) ;
     font-size: 20px;
+    
    
    
   }
@@ -103,50 +105,63 @@
     color: var(--cor-primaria);
     
   }
-  .cabeça{
+  .cabeca{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
     font-size: 20px;
   }
 
-main{
 
-  background-image: url(../imgs/livro3.jpg);
-  background-repeat: no-repeat;
   
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-}
+ 
+
+
+ 
+  
+  
+  
+ 
+  
+  
+
 
   .formulario-troca{
-    display: flex;
-    flex-direction: column;
-   
-    text-align: center;
-    justify-content: center;
-    width: 70%;
-    height: 50vh;
-    margin: 40px;
-    margin-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+  #avaliacao-troca section{
+    padding: 2rem;
   }
   .perguntas{
     
-   margin-bottom: 70px;
-   font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
+   
+
   }
   .perguntas label{
     background-color: var(--cor-tres);
     border: solid var(--cor-secundaria);
-    padding: 20px;
+    text-align: center;
+    
+   
+
+    
+    
   }
   #resposta{
-    width: 30%;
-    height: 40px;
+    padding: 1rem;
     background-color: var(--cor-primaria);
-    padding: 20px;
+    width: 400px;
+   
+    
   }
 
 
@@ -154,9 +169,11 @@ main{
   .text-final{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    padding: 6rem;
+    
   
-    bottom: 0;
+   
   }
   .text-final h3{
     font-size: 30px;
@@ -168,14 +185,28 @@ main{
   .text-final input{
     height: 30px;
     width:300px;
-  
-    
+   
+    background-color: var(--cor-tres);
+    border: none;
+    cursor: pointer;
   }
- #enviar{
-  color: var(--cor-secundaria);
-  background-color: var(--cor-tres);
-  border: none;
-  cursor: pointer;
  
- }
+ 
   
+ #avaliacao-troca{
+    display: grid;
+    grid-template-columns: 3fr 9fr;  
+    background-image: url(../imgs/livro3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+/* precisa dar 12 no total de colunas a serem preenchidas */
+/* precisa colocar o grid no pai, que vai colocar coluna em toda a pagina e onde eu quero mais coluna aplica outro grid e pode aplicar um display flex */
+ }
+
+  #caixa-sobre::placeholder {
+  text-align: center;
+ }
+
+ #caixa-sobre{
+  background-color: var(--cor-primaria);
+ }
