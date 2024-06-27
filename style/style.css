@@ -9,7 +9,7 @@
   * {
     margin: 0;
     padding: 0;
-     /* box-sizing: border-box;  */
+    /* box-sizing: border-box;  */
   }
 
   .topo {
@@ -39,13 +39,13 @@
   #icon-perfil {
     display: flex;
     flex-direction: column;
-   
+
   }
 
   #icon-perfil a {
     text-decoration: none;
     color: var(--BRANCO);
-   
+
   }
 
   #topo-buscar {
@@ -66,6 +66,7 @@
     right: 3%;
 
 
+
   }
 
   #buscar {
@@ -75,138 +76,173 @@
     border: none;
     padding: 1rem;
   }
-  #buscar ::placeholder{
+
+  #buscar ::placeholder {
     text-align: center;
   }
- 
+
 
   /* lateral da pagina */
   .barra-lateral {
     display: flex;
     flex-direction: column;
-    
     padding: 30px;
     height: 100vh;
-    width: 300px;
+    /* width: 300px; */
     align-items: center;
+
+    text-align: center;
     border-right: solid var(--cor-secundaria);
   }
-  .barra-lateral a{
+
+  .barra-lateral a {
     margin-bottom: 60px;
     text-decoration: none;
     cursor: pointer;
-    color:var(--cor-secundaria) ;
+    color: var(--cor-secundaria);
     font-size: 20px;
-    
-   
-   
+
+
+
   }
-  .barra-lateral :hover{
+
+  .barra-lateral :hover {
     color: var(--cor-primaria);
-    
+
   }
-  .cabeca{
+
+  .cabeca {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
-    padding: 4rem;
-    font-size: 20px;
+    padding: 1rem;
+    font-size: 30px;
   }
 
 
-  
- 
 
 
- 
-  
-  
-  
- 
-  
-  
 
 
-  .formulario-troca{
+
+
+
+
+
+
+
+
+
+  .formulario-troca {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  #avaliacao-troca section{
+
+  #avaliacao-troca section {
     padding: 2rem;
   }
-  .perguntas{
-    
+
+  .perguntas {
+
     display: flex;
     flex-direction: column;
     font-size: 25px;
-    justify-content: space-between;
-    align-items: center;
-   
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
 
   }
-  .perguntas label{
+
+  .perguntas label {
     background-color: var(--cor-tres);
     border: solid var(--cor-secundaria);
     text-align: center;
-    
-   
+    padding-top: 1rem;
+    height: 50px;
 
-    
-    
+
+
+
+
   }
-  #resposta{
+
+  #resposta {
     padding: 1rem;
     background-color: var(--cor-primaria);
-    width: 400px;
-   
-    
+    width: 500px;
+
+
   }
 
+  #btn-formulario {
+    display: grid;
+    grid-column: 2;
+    border: solid var(--cor-secundaria);
+    height: 30px;
+    width: 200px;
+    background-color: var(--cor-tres);
+    margin-left: 8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    /* border-radius: 20px; */
+  }
 
-
-  .text-final{
+  .text-final {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     padding: 6rem;
-    
-  
-   
+
   }
-  .text-final h3{
-    font-size: 30px;
-    color: var(--cor-secundaria);
+
+  .text-final label {
+    display: flex;
+    font-size: 40px;
+
   }
-  .text-final p{
+
+  .text-final p {
+    display: flex;
     font-size: 20px;
+    padding: 1rem;
+    color: var(--preto);
   }
-  .text-final input{
-    height: 30px;
-    width:300px;
+
+  .text-final input {
+    display: flex;
+    margin-left: 3rem;
    
+    justify-content: center;
+    height: 30px;
+    width: 200px;
     background-color: var(--cor-tres);
-    border: none;
+    border: solid var(--cor-secundaria);
     cursor: pointer;
+    /* border-radius: 30px; */
   }
- 
- 
-  
- #avaliacao-troca{
+
+
+
+  #avaliacao-troca {
     display: grid;
-    grid-template-columns: 3fr 9fr;  
+    grid-template-columns: 1fr 11fr;
     background-image: url(../imgs/livro3.jpg);
     background-size: cover;
-    background-repeat: no-repeat;  
-/* precisa dar 12 no total de colunas a serem preenchidas */
-/* precisa colocar o grid no pai, que vai colocar coluna em toda a pagina e onde eu quero mais coluna aplica outro grid e pode aplicar um display flex */
- }
+    background-repeat: no-repeat;
+    /* precisa dar 12 no total de colunas a serem preenchidas */
+    /* precisa colocar o grid no pai, que vai colocar coluna em toda a pagina e onde eu quero mais coluna aplica outro grid e pode aplicar um display flex */
+  }
 
   #caixa-sobre::placeholder {
-  text-align: center;
- }
+    text-align: center;
+  }
 
- #caixa-sobre{
-  background-color: var(--cor-primaria);
- }
+  #caixa-sobre {
+    background-color: var(--cor-primaria);
+    border: solid var(--cor-secundaria);
+    
+   
+  }
+  .text-final input 

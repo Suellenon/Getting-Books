@@ -28,7 +28,7 @@
         </div>
         <form action="" id="topo-buscar">
             <input type="search" name="buscar" id="buscar" placeholder="Buscar...">
-            <button type="submit" id="btn-buscar"> <img src="./imgs/procurar.png" alt="" width="30px"></button>
+            <button type="submit" id="btn-buscar"> <img src="./imgs/procurar.png" alt="" width="28px"></button>
         </form>
     </header>
 
@@ -53,43 +53,49 @@
             <form class="formulario-troca" action="">
                 <div class="perguntas">
                     <label for="text">Ocorreu algum problema na comunicação?</label>
-                    <input type="text" name="text" id="resposta">
+                    <input type="text" name="text" id="resposta" required>
                 </div>
 
                 <div class="perguntas">
                     <label for="text">Ocorreu erro na troca?</label>
-                    <input type="text" name="text" id="resposta">
+                    <input type="text" name="text" id="resposta" required>
                 </div>
 
                 <div class="perguntas">
                     <label for="text">Ocorreu algum erro na plataforma?</label>
-                    <input type="text" name="text" id="resposta">
+                    <input type="text" name="text" id="resposta" required>
                 </div>
                 <div class="perguntas">
                     <label for="text">O livro está em bom estado?</label>
-                    <input type="text" name="text" id="resposta">
+                    <input type="text" name="text" id="resposta" required>
                 </div>
 
 
                 <div class="perguntas">
                     <label for="text">Está satisfeito(a) com a troca?</label>
-                    <input type="text" name="text" id="resposta">
+                    <input type="text" name="text" id="resposta" required>
                 </div>
                 <div class="perguntas">
                     <label for="text">Como você avalia o usuário da troca?</label>
-                    <input type="text" name="text" id="resposta">
+                    <input type="text" name="text" id="resposta" required>
                 </div>
-
+                <input type="submit" value="Enviar" id="btn-formulario" required>
             </form>
+
+
             <div class="text-final">
 
-                <h3>
-                    Quer falar mais sobre?
-                </h3>
-                <input type="text" name="text" id="caixa-sobre" placeholder=".....">
-                <input type="submit" value="Enviar" id="text">
 
+                <form action="">
+                    <label for="text">Quer falar mais Sobre?</label>
+                    <input type="text" name="text" id="caixa-sobre" placeholder="....." >
+                    <input type="submit" value="Enviar" id="text">
+                </form>
                 <p>O seu feedback é muito importante pra nós</p>
+
+
+
+
 
 
             </div>
