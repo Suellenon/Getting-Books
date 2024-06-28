@@ -112,7 +112,7 @@ header {
     color: var(--cor-secundaria);
     text-decoration: none;
     cursor: pointer;
- 
+    font-size: 20px;
     margin-right: 7rem;
    
   }
@@ -192,7 +192,7 @@ header {
     height: 30px;
     width: 200px;
     background-color: var(--cor-tres);
-    margin-left: 8rem;
+    margin-left: 10rem;
     margin-top: 2rem;
     cursor: pointer;
     /* border-radius: 20px; */
