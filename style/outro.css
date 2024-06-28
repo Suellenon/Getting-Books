@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #9EAC71;
+    --cor-secundaria: #545b3c;
+    --cor-tres: #eadbc8;
+    --BRANCO: white;
+    --preto: black;
+}
+.nav-topo{
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.nav-topo li{
+    color: var(--BRANCO);
+}
+.nav-topo a {
+    color: var(--BRANCO);
+    text-decoration: none;
+    padding: 1rem;
+   
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--BRANCO);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+  
+    font-size: 20px;
+
+
+}
+
+.caixa-busca {
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+}
+
+#busca {
+
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.caixa-busca ::placeholder {
+    padding-left: 1rem;
+    color: var(--cor-tres);
+    
+}
+
+#btn-busca {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+
+}
+
+
+
+.links-header :hover{
+    color: var(--cor-tres);
+
+   
+}
+
+.links-header a {
+
+    font-size: 25px;
+    text-decoration: none;
+    margin: 2rem;
+    color: var(--BRANCO);
+
+}
+
+   
+
+
+.nav-links{
+    background-color: var(--cor-tres);
+    display: flex;
+    justify-content: center;
+  
+   
+
+}
+.nav-links a{
+   
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    cursor: pointer;
+ 
+    margin-right: 7rem;
+   
+  }
+
+   
+ 
+
+  .cabeca {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    padding: 1rem;
+    font-size: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .formulario-troca {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  #avaliacao-troca section {
+    padding: 2rem;
+  }
+
+  .perguntas {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+
+  }
+
+  .perguntas label {
+    background-color: var(--cor-tres);
+    border: solid var(--cor-secundaria);
+    text-align: center;
+    padding-top: 1rem;
+    height: 50px;
+
+
+
+
+
+  }
+
+  #resposta {
+    padding: 1rem;
+    background-color: var(--cor-primaria);
+    
+
+
+  }
+
+  #btn-formulario {
+    display: grid;
+    grid-column: 2;
+    border: solid var(--cor-secundaria);
+    height: 30px;
+    width: 200px;
+    background-color: var(--cor-tres);
+    margin-left: 8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    /* border-radius: 20px; */
+  }
+
+  .text-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+
+  }
+
+  .text-final label {
+    display: flex;
+    font-size: 40px;
+
+  }
+
+  .text-final p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--preto);
+   
+  }
+
+  .text-final input {
+    display: flex;
+    margin-left: 3rem;
+   
+    justify-content: center;
+    height: 30px;
+    width: 200px;
+    background-color: var(--cor-tres);
+    border: solid var(--cor-secundaria);
+    cursor: pointer;
+    /* border-radius: 30px; */
+  }
+
+
+
+  #avaliacao-troca {
+   
+    background-image: url(../imgs/livro3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* precisa dar 12 no total de colunas a serem preenchidas */
+    /* precisa colocar o grid no pai, que vai colocar coluna em toda a pagina e onde eu quero mais coluna aplica outro grid e pode aplicar um display flex */
+  }
+
+  #caixa-sobre::placeholder {
+    text-align: center;
+  }
+
+  #caixa-sobre {
+    background-color: var(--cor-primaria);
+    border: solid var(--cor-secundaria);
+    
+   
+  }
