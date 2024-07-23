@@ -4,42 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getting books</title>
+    <title>GETTING BOOKS</title>
     <link rel="stylesheet" href="./style/style.css">
 
 </head>
 
 <body>
+    <nav class="nav-topo">
+        <a href="">Sobre a Getting Books</a>
+        <li><a href="">Central De Ajuda</a></li>
+    </nav>
     <header>
 
-
-        <div id="icon-perfil">
-
-            <img src="./imgs/perfil.png" alt="" width="40px">
-            <a href="">Login</a>
+        <div class="logo">
+           <img src="./imgs/menu (1).png" alt="">
+          
+            <img src="./imgs/logo gettin.png" alt="" width="80px">
+            <h1>Getting Books</h1>
         </div>
+        <form action="" class="caixa-busca">
 
+            <input type="search" name="busca" id="busca" placeholder="O que você está procurando?">
+            <button type="submit" id="btn-busca"><img src="./imgs/procurar.png" alt="" width="20px"></button>
 
-        <div class="topo">
-            <h1 class="logo">
-                <img src="./imgs/logo gettin.png" alt="" width="70px">
-                Getting Books
-            </h1>
-        </div>
-        <form action="" id="topo-buscar">
-            <input type="search" name="buscar" id="buscar" placeholder="Buscar...">
-            <button type="submit" id="btn-buscar"> <img src="./imgs/procurar.png" alt="" width="28px"></button>
         </form>
+        <div class="links-header">
+            <a href=""><img src="./imgs/like.png" alt="" width="30px">Minha Lista</a>
+            <a href=""><img src="./imgs/exchange.png" alt="" width="30px">Trocas</a>
+            <a href=""><img src="./imgs/user (1).png" alt="" width="30px">Usuário</a>
+        </div>
     </header>
+    <nav class="nav-links">
+
+
+        <a href="#">Categorias</a>
+        <a href="#">Mais Trocados</a>
+        <a href="#">Principais Autores</a>
+        <a href="#">Obras de Sucesso</a>
+
+      
+    </nav>
+    <nav class="versao_mobile">
+
+<img src="./imgs/menu-bar.png" alt="">
+        <a href="#">Categorias</a>
+        <a href="#">Mais Trocados</a>
+        <a href="#">Principais Autores</a>
+        <a href="#">Obras de Sucesso</a>
+        <a href="#">Sobre a Getting Books</a>
+        <a href="#">Central De Ajuda</a>
+
+      
+    </nav>
+
 
     <main id="avaliacao-troca">
-        <aside class="barra-lateral">
-            <a href="">Home</a>
-            <a href="">Minhas Trocas </a>
-            <a href="">Livros</a>
-            <a href="">Ajuda</a>
-            <a href="">Quem Somos?</a>
-        </aside>
+        
 
         <section>
             <div class="cabeca">
@@ -88,12 +108,12 @@
 
                 <form action="">
                     <label for="text">Quer falar mais Sobre?</label>
-                    <p>(O seu Feedback é muito importante pra nós)</p>
+                    <p>O seu feedback é muito importante pra nós</p>
+
                     <input type="text" name="text" id="caixa-sobre" placeholder="....." >
                     <input type="submit" value="Enviar" id="text">
                 </form>
-                <!-- <p>O seu feedback é muito importante pra nós</p> -->
-
+               
 
 
 
@@ -105,6 +125,7 @@
 
 
     </main>
+
 </body>
 
 </html>
