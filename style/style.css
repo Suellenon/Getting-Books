@@ -148,6 +148,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+ 
 
   #avaliacao-troca section {
     padding: 2rem;
@@ -192,7 +193,7 @@ header {
     height: 30px;
     width: 200px;
     background-color: var(--cor-tres);
-    margin-left: 10rem;
+    margin-left: 12rem;
     margin-top: 2rem;
     cursor: pointer;
     /* border-radius: 20px; */
@@ -202,31 +203,34 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6rem;
-
+    margin-top: 2rem;
+ 
+   
   }
 
   .text-final label {
     display: flex;
     font-size: 40px;
-
+    margin-left: 6rem;
   }
 
   .text-final p {
-    display: flex;
-    justify-content: center;
+   
+    
     font-size: 20px;
     color: var(--preto);
+    margin-bottom: 1rem;
+    margin-left: 6rem;
    
   }
 
   .text-final input {
     display: flex;
-    margin-left: 3rem;
-   
-    justify-content: center;
-    height: 30px;
-    width: 200px;
+    margin-left: 5rem;
+    width: 550px;
+    height: 50px;
+    
+    margin: auto;
     background-color: var(--cor-tres);
     border: solid var(--cor-secundaria);
     cursor: pointer;
@@ -234,23 +238,27 @@ header {
   }
 
 
-
+/* 
   #avaliacao-troca {
    
-    background-image: url(../imgs/livro3.jpg);
+    background-image: url(../imgs/);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     /* precisa dar 12 no total de colunas a serem preenchidas */
     /* precisa colocar o grid no pai, que vai colocar coluna em toda a pagina e onde eu quero mais coluna aplica outro grid e pode aplicar um display flex */
-  }
+  
 
   #caixa-sobre::placeholder {
     text-align: center;
   }
 
   #caixa-sobre {
+    display: flex;
+ 
     background-color: var(--cor-primaria);
     border: solid var(--cor-secundaria);
+    width: 550px;
+    height: 50px;
     
    
   }
