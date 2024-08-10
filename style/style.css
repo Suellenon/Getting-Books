@@ -1,136 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --cor-primaria: #9EAC71;
-    --cor-secundaria: #545b3c;
-    --cor-tres: #eadbc8;
-    --BRANCO: white;
-    --preto: black;
+  --cor-primaria: #9EAC71;
+  --cor-secundaria: #545b3c;
+  --cor-tres: #eadbc8;
+  --BRANCO: white;
+  --preto: black;
 }
-.nav-topo{
-    background-color: var(--cor-secundaria);
-    display: flex;
-    align-items: center;
-    justify-content: end;
+
+.nav-topo {
+  background-color: var(--cor-secundaria);
+  display: flex;
+  align-items: center;
+  justify-content: end;
 
 }
-.nav-topo li{
-    color: var(--BRANCO);
+
+.nav-topo li {
+  color: var(--BRANCO);
 }
+
 .nav-topo a {
-    color: var(--BRANCO);
-    text-decoration: none;
-    padding: 1rem;
-   
+  color: var(--BRANCO);
+  text-decoration: none;
+  padding: 1rem;
+
 }
 
 header {
-    background-color: var(--cor-primaria);
-    color: var(--BRANCO);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--cor-primaria);
+  color: var(--BRANCO);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-  
-    font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  font-size: 20px;
 
 
 }
 
 .caixa-busca {
-    display: flex;
-    position: relative;
-    align-items: center;
-    
+  display: flex;
+  position: relative;
+  align-items: center;
+
 }
 
 #busca {
 
-    height: 30px;
-    width: 400px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
+  height: 30px;
+  width: 400px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
 
 
 }
 
 .caixa-busca ::placeholder {
-    padding-left: 1rem;
-    color: var(--cor-tres);
-    
+  padding-left: 1rem;
+  color: var(--cor-tres);
+
 }
 
 #btn-busca {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    right: 2%;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 2%;
+  cursor: pointer;
 
 }
 
 
 
-.links-header :hover{
-    color: var(--cor-tres);
+.links-header :hover {
+  color: var(--cor-tres);
 
-   
+
 }
 
 .links-header a {
 
-    font-size: 25px;
-    text-decoration: none;
-    margin: 2rem;
-    color: var(--BRANCO);
+  font-size: 25px;
+  text-decoration: none;
+  margin: 2rem;
+  color: var(--BRANCO);
 
 }
 
-   
 
 
-.nav-links{
-    background-color: var(--cor-tres);
-    display: flex;
-    justify-content: center;
-  
-   
+
+.nav-links {
+  background-color: var(--cor-tres);
+  display: flex;
+  justify-content: center;
+
+
 
 }
-.nav-links a{
-   
-    color: var(--cor-secundaria);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 20px;
-    margin-right: 7rem;
-   
-  }
 
-   
- 
+.nav-links a {
 
-  .cabeca {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    text-align: center;
-    padding: 1rem;
-    font-size: 30px;
-  }
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 7rem;
+
+}
 
 
 
+
+.cabeca {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  padding: 1rem;
+  font-size: 30px;
+}
 
 
 
@@ -143,99 +145,102 @@ header {
 
 
 
-  .formulario-troca {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
- 
-
-  #avaliacao-troca section {
-    padding: 2rem;
-  }
-
-  .perguntas {
-
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-
-
-  }
-
-  .perguntas label {
-    background-color: var(--cor-tres);
-    border: solid var(--cor-secundaria);
-    text-align: center;
-    padding-top: 1rem;
-    height: 50px;
 
 
 
+.formulario-troca {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
 
 
-  }
+#avaliacao-troca section {
+  padding: 2rem;
+}
 
-  #resposta {
-    padding: 1rem;
-    background-color: var(--cor-primaria);
-    
+.perguntas {
+
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 
 
-  }
+}
 
-  #btn-formulario {
-    display: grid;
-    grid-column: 2;
-    border: solid var(--cor-secundaria);
-    height: 30px;
-    width: 200px;
-    background-color: var(--cor-tres);
-    margin-left: 12rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    /* border-radius: 20px; */
-  }
+.perguntas label {
+  background-color: var(--cor-tres);
+  border: solid var(--cor-secundaria);
+  text-align: center;
+  padding-top: 1rem;
+  height: 50px;
 
-  .text-final {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
- 
-   
-  }
 
-  .text-final label {
-    display: flex;
-    font-size: 40px;
-    margin-left: 6rem;
-  }
 
-  .text-final p {
-   
-    
-    font-size: 20px;
-    color: var(--preto);
-    margin-bottom: 1rem;
-    margin-left: 6rem;
-   
-  }
 
-  .text-final input {
-    display: flex;
-    margin-left: 5rem;
-    width: 550px;
-    height: 50px;
-    
-    margin: auto;
-    background-color: var(--cor-tres);
-    border: solid var(--cor-secundaria);
-    cursor: pointer;
-    /* border-radius: 30px; */
-  }
+
+}
+
+#resposta {
+  padding: 1rem;
+  background-color: var(--cor-primaria);
+
+
+
+}
+
+#btn-formulario {
+  display: grid;
+  grid-column: 2;
+  border: solid var(--cor-secundaria);
+  height: 30px;
+  width: 200px;
+  background-color: var(--cor-tres);
+  margin-left: 12rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  /* border-radius: 20px; */
+}
+
+.text-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+
+}
+
+.text-final label {
+  display: flex;
+  font-size: 40px;
+  margin-left: 6rem;
+}
+
+.text-final p {
+
+
+  font-size: 20px;
+  color: var(--preto);
+  margin-bottom: 1rem;
+  margin-left: 6rem;
+
+}
+
+.text-final input {
+  display: flex;
+  margin-left: 5rem;
+  width: 550px;
+  height: 50px;
+
+  margin: auto;
+  background-color: var(--cor-tres);
+  border: solid var(--cor-secundaria);
+  cursor: pointer;
+  /* border-radius: 30px; */
+}
 
 
 /* 
@@ -244,65 +249,118 @@ header {
     background-image: url(../imgs/);
     background-size: cover;
     background-repeat: no-repeat; */
-    /* precisa dar 12 no total de colunas a serem preenchidas */
-    /* precisa colocar o grid no pai, que vai colocar coluna em toda a pagina e onde eu quero mais coluna aplica outro grid e pode aplicar um display flex */
-  
+/* precisa dar 12 no total de colunas a serem preenchidas */
+/* precisa colocar o grid no pai, que vai colocar coluna em toda a pagina e onde eu quero mais coluna aplica outro grid e pode aplicar um display flex */
 
-  #caixa-sobre::placeholder {
-    text-align: center;
-  }
 
-  #caixa-sobre {
-    display: flex;
+#caixa-sobre::placeholder {
+  text-align: center;
+}
+
+#caixa-sobre {
+  display: flex;
+
+  background-color: var(--cor-primaria);
+  border: solid var(--cor-secundaria);
+  width: 550px;
+  height: 50px;
+
+
+}
+
+.logo button {
+  display: none;
  
-    background-color: var(--cor-primaria);
-    border: solid var(--cor-secundaria);
-    width: 550px;
-    height: 50px;
-    
-   
+  width: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+
+
+
+}
+
+.logo button img {
+  display: none;
+}
+
+.versao_mobile {
+
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+  position: absolute;
+  bottom: 30%;
+  z-index: 1;
+  background-color: var(--cor-tres);
+  border-radius: 20px;
+
+
+
+
+
+
+}
+.versao_mobile a{
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--cor-secundaria);
+}
+
+@media screen and (max-width:1300px) {
+  header {
+    height: 80px;
+  
+    justify-content: center;
   }
 
-  @media screen and (max-width:1300px) {
-   header{
+  #busca {
+    width: 160px;
+  }
+  .caixa-busca ::placeholder {
+   color: var(--BRANCO);
+  }
+  .logo img{
+    width: 40px;
    
    
    
-   
-   }
-   #busca{
-    
-   
-   }
-   .logo {
-   
-   }
-   .logo img{
-    width: 50px;
-    
-    
-   }
-     
-   .links-header{
+  }
+.logo h1{
+  font-size: 25px;
+ 
+}
+  .logo button {
+    display: flex;
+  }
+
+  .logo button img {
+    display: flex;
+  }
+
+  .links-header {
     display: none;
   }
-  .nav-topo{
+
+  .nav-topo {
     display: none;
   }
-  .nav-links{
-   display: none;
+
+  .nav-links {
+    display: none;
   }
-      
-     
-     
-  .versao_mobile{
+
+
+
+  .versao_mobile {
     display: flex;
     flex-direction: column;
 
   }
-  
-  }
-  
-  
-    
-  
+
+}
