@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GETTING BOOKS</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script src="javascript.js" defer></script>
 
 </head>
 
@@ -17,7 +18,9 @@
     <header>
 
         <div class="logo">
-            <button><img src="./imgs/menu (1).png" alt="" ></button>
+
+            <button id="button"><img src="./imgs/menu (1).png" alt="" onclick="barra_lateral()"
+                    id="btn_lateral"></button>
 
             <img src="./imgs/logo gettin.png" alt="" width="80px">
             <h1>Getting Books</h1>
@@ -44,7 +47,7 @@
 
 
     </nav>
-    <nav class="versao_mobile">
+    <nav class="versao_mobile" id="versao_mobile">
         <a href="#">Categorias</a>
         <a href="#">Mais Trocados</a>
         <a href="#">Principais Autores</a>
@@ -68,12 +71,12 @@
             </div>
             <form class="formulario-troca" action="">
                 <div class="perguntas">
-                    <label for="text">Ocorreu algum problema na comunicação?</label>
+                    <label for="text">Qual seu nome?</label>
                     <input type="text" name="text" id="resposta" required>
                 </div>
 
                 <div class="perguntas">
-                    <label for="text">Ocorreu erro na troca?</label>
+                    <label for="text">Qual seu email?</label>
                     <input type="text" name="text" id="resposta" required>
                 </div>
 

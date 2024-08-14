@@ -270,7 +270,6 @@ header {
 
 .logo button {
   display: none;
- 
   width: 25px;
   background: none;
   border: none;
@@ -286,22 +285,18 @@ header {
 }
 
 .versao_mobile {
-
   font-size: 25px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-
   position: absolute;
-  bottom: 30%;
+  top: 8%;
   z-index: 1;
   background-color: var(--cor-tres);
-  border-radius: 20px;
-
-
-
-
+  margin: auto;
+  
+  visibility: hidden; 
+  
 
 
 }
@@ -309,24 +304,35 @@ header {
   text-decoration: none;
   padding: 10px;
   cursor: pointer;
+  margin-bottom: 20px;
   color: var(--cor-secundaria);
+  padding: 20px;
+  height: 100%;
+}
+.versao_mobile a:hover{
+  background-color: var(--cor-primaria);
 }
 
 @media screen and (max-width:1300px) {
   header {
     height: 80px;
-  
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   #busca {
-    width: 160px;
+    width: 250px;
   }
   .caixa-busca ::placeholder {
    color: var(--BRANCO);
   }
+  .logo{
+    display: flex;
+    gap: 10px;
+  }
   .logo img{
-    width: 40px;
+    
+    width: 50px;
    
    
    
@@ -337,10 +343,12 @@ header {
 }
   .logo button {
     display: flex;
+    
   }
 
   .logo button img {
     display: flex;
+   
   }
 
   .links-header {
@@ -362,5 +370,33 @@ header {
     flex-direction: column;
 
   }
+  .formulario-troca{
+    display: flex;
+    flex-direction: column;
+  }
+  #btn-formulario{
+    display: flex;
+  margin: auto;
+  
+  }
+  .text-final{
+   
+    width: 100px;
+    margin: auto;
+  }
+/*barra-lateral*/
+.versao_mobile.abrir {
+  display: flex;
+  visibility: visible;
+  text-align: center;
+}
+#btn_lateral {
+  display: flex;
+ 
+ 
+
+
+
+}
 
 }
