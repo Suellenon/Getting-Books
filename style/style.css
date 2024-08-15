@@ -379,10 +379,27 @@ header {
   margin: auto;
   
   }
-  .text-final{
+  .cabeca{
+    font-size: 20px;
+  }
+  .text-final {
    
-    width: 100px;
-    margin: auto;
+   display: flex;
+   text-align: center;
+   
+  }
+  .text-final label{
+    font-size: 25px; 
+    margin-left:20% ;
+    padding: 10px;
+  }
+  #caixa-sobre{
+ 
+    width: 260px;
+  }
+  .text-final input{
+    width: 260px;
+
   }
 /*barra-lateral*/
 .versao_mobile.abrir {
